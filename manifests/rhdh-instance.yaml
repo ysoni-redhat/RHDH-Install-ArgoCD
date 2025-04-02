@@ -1,0 +1,10 @@
+apiVersion: rhdh.openshift.io/v1alpha1
+kind: RHDH
+metadata:
+  name: rhdh
+  namespace: rhdh
+spec:
+  components:
+    database: postgresql
+  deployment:
+    replicas: 1
