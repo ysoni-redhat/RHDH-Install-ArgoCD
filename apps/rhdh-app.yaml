@@ -6,9 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/your-repo/rhdh-install.git'
+    repoURL: 'https://github.com/ysoni-redhat/RHDH-Install-ArgoCD.git'
     targetRevision: main
     path: manifests
+    directory:
+      include: namespace.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: rhdh
